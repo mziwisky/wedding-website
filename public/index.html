@@ -54,7 +54,6 @@
       }
       .doop {
         font-size: 24px;
-        /* font-family: 'Poiret One', sans-serif; */
       }
       .slice {
         padding: 60px 0;
@@ -196,7 +195,14 @@
     <div class="full">
 
       <div class="header center-text gray">
-        Mike Ziwisky &amp; Kate Fleming
+        <div id="header">
+          Mike Ziwisky &amp; Kate Fleming
+        </div>
+        <div id="header-edited" style="display:none;">
+          Mike Ziwisky &amp; Kate
+          <strike><span class="stricken">Fleming</span></strike>
+          <span class="red-fg">Ziwisky</span>
+        </div>
       </div>
 
       <div class="slice no-padding brown">
@@ -306,21 +312,26 @@
           </div>
 
           <script type="text/javascript">
-            var edits = false;
+            var renderEdits = false;
+            var editables = ["story", "header"];
             function rerender() {
-              if (edits) showEdits();
+              if (renderEdits) showEdits();
               else hideEdits();
             }
             function showEdits() {
-              document.getElementById("story").style.display = "none";
-              document.getElementById("story-edited").style.display = "initial";
+              editables.forEach(function(id) {
+                document.getElementById(id).style.display = "none";
+                document.getElementById(id + "-edited").style.display = "initial";
+              });
             }
             function hideEdits() {
-              document.getElementById("story").style.display = "initial";
-              document.getElementById("story-edited").style.display = "none";
+              editables.forEach(function(id) {
+                document.getElementById(id).style.display = "initial";
+                document.getElementById(id + "-edited").style.display = "none";
+              });
             }
             document.getElementById("checkbox").addEventListener("change", function(e) {
-              edits = e.target.checked;
+              renderEdits = e.target.checked;
               setTimeout(rerender, 200);
             });
           </script>
