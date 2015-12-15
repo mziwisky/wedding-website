@@ -321,12 +321,12 @@
             function showEdits() {
               editables.forEach(function(id) {
                 document.getElementById(id).style.display = "none";
-                document.getElementById(id + "-edited").style.display = "initial";
+                document.getElementById(id + "-edited").style.display = "block";
               });
             }
             function hideEdits() {
               editables.forEach(function(id) {
-                document.getElementById(id).style.display = "initial";
+                document.getElementById(id).style.display = "block";
                 document.getElementById(id + "-edited").style.display = "none";
               });
             }
