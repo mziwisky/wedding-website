@@ -6,189 +6,8 @@
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <style>
-      body {
-        font-family: 'Slabo 27px', sans-serif;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        color: white;
-      }
-      h5 {
-        font-family: 'Poiret One', sans-serif;
-        margin-bottom: 50px;
-      }
-      .full {
-        height: 100%;
-        width: 100%;
-      }
-      .header {
-        font-family: 'Kaushan Script', sans-serif;
-        font-size: 26px;
-        margin: 0 auto;
-        padding: 20px 0;
-      }
-      .main-photo {
-        height: 400px;
-        width: 100%;
-        max-width: 1500px;
-        margin: 0 auto;
-        background: url(assets/wide-van.jpeg) no-repeat 60% center;
-        background-size: cover;
-      }
-      .narrow {
-        max-width: 400px;
-        margin: 0 auto;
-      }
-      .footnote {
-        margin-top: 30px;
-        font-size: 16px;
-      }
-      .somewhat-narrow {
-        max-width: 600px;
-        margin: 0 auto;
-      }
-      .center-text {
-        text-align: center;
-      }
-      .doop {
-        font-size: 24px;
-      }
-      .slice {
-        padding: 60px 0;
-      }
-      .gray {
-        background-color: #4E5E60;
-      }
-      .gold {
-        background-color: #A8863A;
-      }
-      .brown {
-        background-color: #46423F;
-      }
-      .blue {
-        background-color: #2B86C6;
-      }
-      .no-padding {
-        padding: 0;
-      }
-      .slice h5 {
-        margin-top: 0;
-      }
-      .map-link {
-        text-decoration: none;
-        padding: 6px 20px;
-        color: white;
-        border: 1px solid white;
-      }
-      strike, .red-fg {
-        color: #FF6030;
-      }
-      .stricken {
-        color: #BBB;
-      }
-      .left-text {
-        text-align: left;
-      }
-      a {
-        color: white;
-      }
-
-      .tgl {
-        display: none;
-      }
-      .tgl, .tgl:after, .tgl:before, .tgl *, .tgl *:after, .tgl *:before, .tgl + .tgl-btn {
-        box-sizing: border-box;
-      }
-      .tgl::-moz-selection, .tgl:after::-moz-selection, .tgl:before::-moz-selection, .tgl *::-moz-selection, .tgl *:after::-moz-selection, .tgl *:before::-moz-selection, .tgl + .tgl-btn::-moz-selection {
-        background: none;
-      }
-      .tgl::selection, .tgl:after::selection, .tgl:before::selection, .tgl *::selection, .tgl *:after::selection, .tgl *:before::selection, .tgl + .tgl-btn::selection {
-        background: none;
-      }
-      .tgl + .tgl-btn {
-        outline: 0;
-        display: block;
-        width: 4em;
-        height: 2em;
-        position: relative;
-        cursor: pointer;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-      .tgl + .tgl-btn:after, .tgl + .tgl-btn:before {
-        position: relative;
-        display: block;
-        content: "";
-        width: 50%;
-        height: 100%;
-      }
-      .tgl + .tgl-btn:after {
-        left: 0;
-      }
-      .tgl + .tgl-btn:before {
-        display: none;
-      }
-      .tgl:checked + .tgl-btn:after {
-        left: 50%;
-      }
-
-      .tgl-skewed + .tgl-btn {
-        overflow: hidden;
-        -webkit-transform: skew(-10deg);
-        transform: skew(-10deg);
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        -webkit-transition: all .2s ease;
-        transition: all .2s ease;
-        font-family: sans-serif;
-        background: #6C2B21;
-      }
-      .tgl-skewed + .tgl-btn:after, .tgl-skewed + .tgl-btn:before {
-        -webkit-transform: skew(10deg);
-        transform: skew(10deg);
-        display: inline-block;
-        -webkit-transition: all .2s ease;
-        transition: all .2s ease;
-        width: 100%;
-        text-align: center;
-        position: absolute;
-        line-height: 2em;
-        font-weight: bold;
-        color: #fff;
-        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-      }
-      .tgl-skewed + .tgl-btn:after {
-        left: 100%;
-        content: attr(data-tg-on);
-      }
-      .tgl-skewed + .tgl-btn:before {
-        left: 0;
-        content: attr(data-tg-off);
-      }
-      .tgl-skewed + .tgl-btn:active {
-        background: #888;
-      }
-      .tgl-skewed + .tgl-btn:active:before {
-        left: -10%;
-      }
-      .tgl-skewed:checked + .tgl-btn {
-        background: #26d993;
-      }
-      .tgl-skewed:checked + .tgl-btn:before {
-        left: -100%;
-      }
-      .tgl-skewed:checked + .tgl-btn:after {
-        left: 0;
-      }
-      .tgl-skewed:checked + .tgl-btn:active:after {
-        left: 10%;
-      }
-
-    </style>
+    <link href='assets/main.css' rel='stylesheet' type='text/css'>
+    <link href='assets/toggle.css' rel='stylesheet' type='text/css'>
   </head>
 
   <body class="gray">
@@ -214,11 +33,11 @@
           <h5>THE CEREMONY</h5>
           July 30, 2016, at 6:00 PM<br><br>
           The Urban Ecology Center<br>
-            1500 E Park Pl<br>
-            Milwaukee, WI 53211<br><br>
-            <a class="map-link" target="_blank" href="https://www.google.com/maps/place/Urban+Ecology+Center/@43.0677074,-87.8908661,15z/data=!4m2!3m1!1s0x0:0xe8494522835aa6a1">
-              MAP
-            </a>
+          1500 E Park Pl<br>
+          Milwaukee, WI 53211<br><br>
+          <a class="map-link" target="_blank" href="https://www.google.com/maps/place/Urban+Ecology+Center/@43.0677074,-87.8908661,15z/data=!4m2!3m1!1s0x0:0xe8494522835aa6a1">
+            MAP
+          </a>
           <div class="footnote">
             Reception will follow at the same venue.
           </div>
@@ -228,7 +47,13 @@
       <div class="slice gold">
         <div class="narrow center-text doop">
           <h5>HOTEL INFORMATION</h5>
-          Coming soon...
+          Courtyard Marriott<br>
+          300 W Michigan St<br>
+          Milwaukee, WI 53203<br><br>
+          <a class="map-link" target="_blank" href="https://www.google.com/maps/place/Courtyard+Milwaukee+Downtown/@43.037593,-87.9166647,17z/data=!3m1!4b1!4m2!3m1!1s0x8805199f9a767d33:0x468a6f0842252447">
+            MAP
+          </a><br><br>
+          <a href="guest-info.html">Reservations, shuttle info, and more</a>
         </div>
       </div>
 
